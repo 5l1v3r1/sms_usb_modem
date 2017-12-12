@@ -6,6 +6,9 @@ sms_usb_modem
 
 
 Устоновка модуля
-apt install python-setuptools
-apt install python-serial
 
+1. apt install python3-setuptools
+
+2. apt install python3-serial
+
+3. запускать скрипт из под root или дать достук к устройству.
