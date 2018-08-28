@@ -5,7 +5,7 @@ sms_usb_modem
 
 
 
-Устоновка модуля
+Установка модуля
 
 1. apt install python3-setuptools
 
