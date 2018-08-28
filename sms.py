@@ -11,7 +11,7 @@ def parsCsv(numbers_file):
             return out_list
             
 def textMessege(file):
-    with open(file) as f:
+    with open(file, 'r', encoding='UTF-8') as f:
         message = f.readlines()
         message = "".join(message)
         message = ''.join('%04X' % ord(c) for c in message)
@@ -20,7 +20,7 @@ def textMessege(file):
 def main():
     modem_param_file = "config.ini"
     message = textMessege('message.txt')
-    numbers_file = 'test.csv'
+    numbers_file = 'Phone.csv'
     numbers_list = parsCsv(numbers_file)
     for number in numbers_list:
         number = "+" + str(number)
